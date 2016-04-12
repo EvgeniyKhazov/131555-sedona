@@ -1,6 +1,6 @@
 # Личный проект «Седона»
 
-* Студент: [Евгений Хазов](https://up.htmlacademy.ru/htmlcss/13/user/131555). :-)
+* Студент: [Евгений Хазов](https://up.htmlacademy.ru/htmlcss/13/user/131555).
 * Наставник: [Никита Рогатнев] (https://htmlacademy.ru/profile/id86119).
 
 ---
