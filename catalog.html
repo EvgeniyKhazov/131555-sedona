@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+	<header class="main-header">
+		<nav class="main-navigation">
+			<ul>
+			  <li><a href="#">ИНФОРМАЦИЯ</a></li>
+			  <li><a href="#">ФОТО И ВИДЕО</a></li>
+			  <li><a href="#">КАРТА ШТАТА</a></li>
+			  <li><a href="#">ГОСТИНИЦЫ</a></li>
+			</ul>
+		</nav>
+			
+		<div class="header-logo">
+			<img src="http://placehold.it/150x100" alt="city of Sedona">
+		</div>
+	</header>
+
+	<main>
+		<section class="facilities">
+			<form action="https://echo.htmlacademy.ru" method="post">
+				<div class="infrastructure">
+					ИНФРАСТРУКТУРА:
+					<label><input type="radio" name="infastructure-btn" value="POOL">БАССЕЙН</label>
+					<label><input type="radio" name="infastructure-btn" value="PARKING">ПАРКОВКА</label>
+					<label><input type="radio" name="infastructure-btn" value="WI-FI">WI-FI</label>
+				</div>
+				<div class="type-house">
+					ТИП ЖИЛЬЯ:
+					<label><input type="radio" name="house-btn" value="HOTEL" multiple>ОТЕЛЬ</label>
+					<label><input type="radio" name="house-btn" value="MOTEL" multiple>МОТЕЛЬ</label>
+					<label><input type="radio" name="house-btn" value="APARTMENTS" multiple>АППАРТАМЕНТЫ</label>
+				</div>
+				<div class="cost-block">
+					СТОИМОСТЬ В СУТКИ (Р):
+					<div class="from">
+						<label for="from-field">от</label>
+						<input type="text" name="from" id="from-field">
+					</div>
+					<div class="to">
+						
+					</div>
+				</div>
+			</form>
+		</section>
+	</main>
+  
+  </body>
+ </html>
