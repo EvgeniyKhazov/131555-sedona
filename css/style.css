@@ -4,8 +4,7 @@ body {
 	color: #000000;
 	font-weight: regular;
 	font-family: PT Sans;
-	background-color: f2f2f2;
-	
+	background-color: #f2f2f2;
 }
 
 
@@ -20,18 +19,14 @@ h1 {
 .container {
 	margin: 0 auto;
 	width: 1200px;
-	background-color: f2f2f2;
+	background-color: white;
 }
 
 /*хедер*/
 
 .main-header {
-	background: red;
-	padding: 0 72px;
-}
-
-.main-navigation {
-	background: yellow;
+	
+	padding: 18px 72px 18px 72px;	
 }
 
 .main-navigation ul{
@@ -42,15 +37,53 @@ h1 {
 }
 
 .main-navigation li {
-	display: inline;
-	background: green;
+	display: inline-block;
 	
+	margin-right: 148px;
+}
+
+.main-navigation li:nth-child(2) {
+	margin-right:388px;
+}
+
+.main-navigation li:nth-child(3){
+	margin-right:165px
+}
+
+.main-navigation li:nth-child(4) {	
+	margin-right: 0px;
+}
+
+.main-navigation a {
+	display: block;
+	text-decoration: none;
 }
 
 
 .header-logo {
 	position: absolute;
 	top: 0px;
-	left: 640px;
+	left: 45%;	
+}
+
+/*главный логотип*/
+
+.intro-bg {
+	background-image: url("../img/index-bg.jpg");
+	
+	background-color: red;
+	width:1200px;
+	padding-top: 76px;
+}
+
+.intro-bg  img {
+	margin: 0 auto;
+	display: block;
+	margin-bottom: 23px;
+}
+.intro-bg  img:last-child{
+	margin:0;
 	
 }
+
+
