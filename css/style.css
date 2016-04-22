@@ -5,6 +5,8 @@ body {
 	font-weight: regular;
 	font-family: PT Sans;
 	text-transform: uppercase;
+	background-color: f2f2f2;
+	
 }
 
 h1 {
@@ -14,3 +16,13 @@ h1 {
 	font-weight: bold;
 	font-family: PT Sans;
 }
+
+.container{
+	margin: 0 auto;
+	width: 1200px;
+	background-color: f2f2f2;
+}
+
+/*хедер*/
+
+
