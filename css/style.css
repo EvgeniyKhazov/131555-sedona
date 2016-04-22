@@ -5,6 +5,7 @@ body {
 	font-weight: regular;
 	font-family: PT Sans;
 	background-color: f2f2f2;
+	
 }
 
 
@@ -23,21 +24,33 @@ h1 {
 }
 
 /*хедер*/
+
 .main-header {
 	background: red;
+	padding: 0 72px;
 }
 
 .main-navigation {
 	background: yellow;
 }
 
-.main-navigation li {
+.main-navigation ul{
+	margin: 0;
+	padding: 0;
 	list-style: none;
-	display: inline;
+	
 }
+
+.main-navigation li {
+	display: inline;
+	background: green;
+	
+}
+
 
 .header-logo {
 	position: absolute;
 	top: 0px;
-	left: 580px;
+	left: 640px;
+	
 }
