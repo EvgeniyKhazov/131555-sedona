@@ -245,6 +245,8 @@ h1 {
 .footer-unit {
 	display: inline-block;
 	background: yellow;
+	vertical-align: middle;
+	margin: 36px 0;
 	
 }
 
@@ -271,12 +273,10 @@ h1 {
 	background-image: url(../img/academy-sprite.png);
 	width: 113px;
 	height: 39px;
-	vertical-align: top;
 }
 
 .html-academy  span {
-	background: green;
-	vertical-align: bottom;
+	vertical-align: top;
 }
 
 .html-academy a:hover {
@@ -287,8 +287,69 @@ h1 {
 	background-position: 0 -95px;
 }
 
+/*каталог*/
+
+/*форма*/
+
+.facilities {
+	font-size: 0px;
+	color: #ffffff;
+	background: url(../img/catalog-form-bg.png);
+	padding: 30px 72px;
+	box-sizing: border-box;
+}
+
+.facilities-item {
+	display: inline-block;
+	background: yellow;
+	font-size: 14px;
+	vertical-align: top;
+	margin-right: 115px;
+	
+}
 
 
 
+.facilities-item label {
+	display: block;
+	background: gray;
+	border: 1px solid black;
+	margin-top: 23px;
+	font-size: 14px;
+	
+}
+
+.facilities-item input {
+	margin-right: 18px;
+}
+
+.facilities-item h2 {
+	margin:0;
+	padding:0;
+	font-size: 16px;
+	line-height: 21px;
+	border: 1px solid red;
+}
+
+.cost-block {
+	margin-left: 222px;
+}
+
+.cost-block button{
+	display: block;
+}
+
+.cost-block .cost-field{
+	display: inline-block;
+}
+
+.cost-field label,input{
+	display: inline-block;
+}
 
 
+
+.cost-block input[type="range"] {
+	display: block;
+	
+}
