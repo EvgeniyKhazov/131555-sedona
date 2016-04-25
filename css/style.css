@@ -12,7 +12,6 @@ h1 {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
-	
 }
 
 .container {
@@ -25,13 +24,16 @@ h1 {
 
 .main-header {
 	
-	padding: 18px 72px 18px 72px;	
+padding: 15px 72px 15px 72px;
+
 }
 
-.main-navigation ul{
+.main-navigation ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	
+	
 	
 }
 
@@ -45,17 +47,18 @@ h1 {
 	margin-right:388px;
 }
 
-.main-navigation li:nth-child(3){
-	margin-right:165px
+.main-navigation li:nth-child(3) {
+	margin-right: 164px;
 }
 
-.main-navigation li:nth-child(4) {	
+.main-navigation li:nth-child(4) {
 	margin-right: 0px;
 }
 
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+	
 }
 
 
@@ -244,7 +247,7 @@ h1 {
 
 .footer-unit {
 	display: inline-block;
-	background: yellow;
+	
 	vertical-align: middle;
 	margin: 36px 0;
 	
@@ -332,7 +335,7 @@ h1 {
 }
 
 .cost-block {
-	margin-left: 222px;
+	
 }
 
 .cost-block button{
@@ -347,9 +350,173 @@ h1 {
 	display: inline-block;
 }
 
-
+.cost-field input{
+	width: 80px;
+}
 
 .cost-block input[type="range"] {
 	display: block;
 	
 }
+
+/*НАЙДЕНО*/
+
+.find-menu {
+	padding: 30px 72px;
+	font-size: 0px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.find-item {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.find-item h3 {
+	font-size: 21px;
+	line-height: 26px;
+	margin: 0;
+	
+	margin-right: 42px;
+}
+
+.sorting span {
+	font-size: 12px;
+	line-height: 18px;
+	vertical-align: middle;
+	margin-right: 40px;
+}
+
+.find-item  ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+}
+
+.find-item li {
+	display: inline-block;
+	font-size: 12px;
+	line-height: 18px;
+	vertical-align: middle;
+}
+
+.find-item a {
+	text-decoration: none;
+}
+
+.sorting li {
+	margin-right: 30px;;
+}
+
+.moving li:last-child {
+	margin-right: 0px;
+}
+
+.moving {
+	margin-left: 474px;
+	
+}
+
+.moving li {
+	margin-right: 12px;
+}
+
+.moving li:last-child {
+	margin-right: 0px;
+}
+
+.moving img {
+	width: 11px;
+	height: 10px;
+	font-size: 23px;
+	line-height: 20px;
+	vertical-align: middle;
+}
+
+/*отели*/
+
+
+
+.housing-item {
+	font-size: 0px;
+	padding: 30px 72px 30px;
+	border-bottom: 1px solid #e5e5e5;
+	
+}
+
+.housing-item  .name {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 258px;
+	
+	margin-left: 30px;
+	
+}
+
+.housing-item  .rating{
+	
+	display: inline-block;
+	vertical-align: bottom;
+	font-size: 14px;
+	line-height: 21px;
+	margin-left: 522px;
+}
+
+.rating span{
+	
+	padding: 4px 13px 4px 13px;
+	background: #f2f2f2;
+	
+}
+
+.housing-item img {
+	
+	vertical-align: bottom;
+}
+
+.housing-item h1{
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+	
+}
+
+.housing-item h1 a{
+	text-decoration: none;
+	
+}
+
+.name .details {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.details span {
+	display: block;
+}
+
+.details a{
+	text-align: center;
+	
+	display: block;
+	width: 110px;
+	
+	background: #81b3d2;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.book {
+	margin-left: 7px;
+}
+.book a{
+	
+	width: 141px;
+	
+	background: #766357;
+	text-decoration: none;
+	color: #ffffff;
+}
+
