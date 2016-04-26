@@ -4,7 +4,7 @@ body {
 	color: #000000;
 	font-weight: regular;
 	font-family: PT Sans;
-	background-color: #f2f2f2;
+	background: #f2f2f2;
 }
 
 
@@ -23,21 +23,23 @@ h1 {
 /*хедер*/
 
 .main-header {
-padding: 15px 0px 15px 0px;
-position: relative;
+	padding: 15px 0px 15px 0px;
+	position: relative;
+	font-size: 0px;
 }
 
 .main-navigation ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	vertical-align: middle;
+	vertical-align: bottom;
+	
 }
 
 .main-navigation li {
 	display: inline-block;
 	width: 240px;
-	text-align: center;
+	text-align: center;	
 }
 
 .main-navigation li:nth-child(2){
@@ -47,6 +49,9 @@ position: relative;
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+	color: #000000;
+	font-size: 14px;
+	font-weight: bold;
 }
 
 .header-logo {
@@ -60,7 +65,7 @@ position: relative;
 /*главный логотип*/
 
 .intro-bg {
-	background-image: url("../img/index-bg.jpg");
+	background: url("../img/index-bg.jpg");
 	width:1200px;
 	padding-top: 76px;
 }
@@ -98,12 +103,11 @@ position: relative;
 	width: 400px;
 	color: #000000;
 	padding: 50px;
-	background: blue;
 	display: inline-block;
 	vertical-align: top;
 	box-sizing: border-box;
 	min-height: 256px;
-	background-color: #eeeeee;
+	background: #eeeeee;
 	
 }
 
@@ -156,7 +160,7 @@ position: relative;
 	color: #ffffff;
 	font-weight: bold;
 	font-family: PT Sans;
-	background-color: #766357;
+	background: #766357;
 	padding: 32px 0;
 	
 }
@@ -232,12 +236,13 @@ position: relative;
 .main-footer {
 	padding: 36px 0px;
 	text-align: center;
-	background: gray;
+	font-size: 0px;
+	
 }
 
 .footer-unit {
 	display: inline-block;
-	vertical-align: bottom;
+	vertical-align: middle;
 	width: 400px;
 	
 }
@@ -252,9 +257,15 @@ position: relative;
 }
 
 .social a {
+	display: inline-block;
 	width: 46px;
 	min-height: 48px;
 	background: #81b3d2;
+	margin-right: 6px;
+}
+
+.social a:last-child {
+	margin-right: 0px;
 }
 
 .html-academy a {
@@ -262,12 +273,17 @@ position: relative;
 	vertical-align: bottom;
 	background: url(../img/academy-sprite.png);
 	width: 113px;
-	height: 39px;
-	
+	height: 40px;
 }
 
+
 .html-academy span {
-	vertical-align: bottom;
+	text-align: left;
+	display: inline-block;
+	width: 82px;
+	padding: 7px 0px; 
+	font-size: 14px;
+	line-height: 26px;
 }
 
 .html-academy a:hover {
@@ -405,6 +421,11 @@ position: relative;
 	width: 82px;
 }
 
+.moving {
+	width: 110px;
+	text-align: right;
+}
+
 .moving img {
 	width: 11px;
 	height: 10px;
@@ -426,7 +447,6 @@ position: relative;
 .housing-item img {
 	vertical-align: bottom;
 	padding-right: 30px;
-	border: 1px solid black;
 }
 
 .housing-item .name {
@@ -434,8 +454,6 @@ position: relative;
 	vertical-align: bottom;
 	box-sizing: border-box;
 	width: 780px;
-	border: 1px solid red;
-	
 }
 
 .housing-item .rating{
