@@ -17,55 +17,44 @@ h1 {
 .container {
 	margin: 0 auto;
 	width: 1200px;
-	background-color: white;
+	background: #ffffff;
 }
 
 /*хедер*/
 
 .main-header {
-	
-padding: 15px 72px 15px 72px;
-
+padding: 15px 0px 15px 0px;
+position: relative;
 }
 
 .main-navigation ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	
-	
-	
+	vertical-align: middle;
 }
 
 .main-navigation li {
 	display: inline-block;
-	
-	margin-right: 148px;
+	width: 240px;
+	text-align: center;
 }
 
-.main-navigation li:nth-child(2) {
-	margin-right:388px;
-}
-
-.main-navigation li:nth-child(3) {
-	margin-right: 164px;
-}
-
-.main-navigation li:nth-child(4) {
-	margin-right: 0px;
+.main-navigation li:nth-child(2){
+	margin-right: 240px;
 }
 
 .main-navigation a {
 	display: block;
 	text-decoration: none;
-	
 }
 
-
 .header-logo {
+	width: 138px;
 	position: absolute;
+	left: 50%;
 	top: 0px;
-	left: 45%;	
+	margin-left: -69px;
 }
 
 /*главный логотип*/
@@ -76,12 +65,12 @@ padding: 15px 72px 15px 72px;
 	padding-top: 76px;
 }
 
-.intro-bg  img {
+.intro-bg img {
 	margin: 0 auto;
 	display: block;
 	margin-bottom: 23px;
 }
-.intro-bg  img:last-child{
+.intro-bg img:last-child{
 	margin:0;
 }
 
@@ -241,15 +230,15 @@ padding: 15px 72px 15px 72px;
 /*футер*/
 
 .main-footer {
+	padding: 36px 0px;
 	text-align: center;
-	
+	background: gray;
 }
 
 .footer-unit {
 	display: inline-block;
-	
-	vertical-align: middle;
-	margin: 36px 0;
+	vertical-align: bottom;
+	width: 400px;
 	
 }
 
@@ -262,24 +251,23 @@ padding: 15px 72px 15px 72px;
 	text-transform: uppercase;
 }
 
-.social {
-	width: 150px;
+.social a {
+	width: 46px;
+	min-height: 48px;
 	background: #81b3d2;
-	padding: 24px;
-	margin-left: 256px;
-	margin-right: 228px;
-	
 }
 
 .html-academy a {
 	display: inline-block;
-	background-image: url(../img/academy-sprite.png);
+	vertical-align: bottom;
+	background: url(../img/academy-sprite.png);
 	width: 113px;
 	height: 39px;
+	
 }
 
-.html-academy  span {
-	vertical-align: top;
+.html-academy span {
+	vertical-align: bottom;
 }
 
 .html-academy a:hover {
@@ -372,26 +360,34 @@ padding: 15px 72px 15px 72px;
 	vertical-align: middle;
 }
 
+.find-menu .number {
+	width: 164px;
+}
+
 .find-item h3 {
 	font-size: 21px;
 	line-height: 26px;
 	margin: 0;
-	
-	margin-right: 42px;
+}
+
+.find-menu .sorting {
+	width: 780px;
 }
 
 .sorting span {
+	display: inline-block;
+	vertical-align: middle;
 	font-size: 12px;
 	line-height: 18px;
-	vertical-align: middle;
-	margin-right: 40px;
+	width: 115px;
 }
 
-.find-item  ul{
+.find-item ul{
 	margin: 0;
 	padding: 0;
 	list-style: none;
 	display: inline-block;
+	vertical-align: middle;
 }
 
 .find-item li {
@@ -406,24 +402,7 @@ padding: 15px 72px 15px 72px;
 }
 
 .sorting li {
-	margin-right: 30px;;
-}
-
-.moving li:last-child {
-	margin-right: 0px;
-}
-
-.moving {
-	margin-left: 474px;
-	
-}
-
-.moving li {
-	margin-right: 12px;
-}
-
-.moving li:last-child {
-	margin-right: 0px;
+	width: 82px;
 }
 
 .moving img {
@@ -442,53 +421,48 @@ padding: 15px 72px 15px 72px;
 	font-size: 0px;
 	padding: 30px 72px 30px;
 	border-bottom: 1px solid #e5e5e5;
-	
 }
 
-.housing-item  .name {
+.housing-item img {
+	vertical-align: bottom;
+	padding-right: 30px;
+	border: 1px solid black;
+}
+
+.housing-item .name {
 	display: inline-block;
+	vertical-align: bottom;
 	box-sizing: border-box;
-	width: 258px;
-	
-	margin-left: 30px;
+	width: 780px;
+	border: 1px solid red;
 	
 }
 
-.housing-item  .rating{
-	
+.housing-item .rating{
 	display: inline-block;
 	vertical-align: bottom;
 	font-size: 14px;
 	line-height: 21px;
-	margin-left: 522px;
 }
 
 .rating span{
-	
 	padding: 4px 13px 4px 13px;
 	background: #f2f2f2;
-	
 }
-
-.housing-item img {
-	
-	vertical-align: bottom;
-}
-
+ 
 .housing-item h1{
 	margin: 0;
 	padding: 0;
-	vertical-align: top;
-	
 }
 
 .housing-item h1 a{
 	text-decoration: none;
-	
 }
 
 .name .details {
 	display: inline-block;
+	width: 116px;
+	vertical-align: middle;
 	font-size: 14px;
 	line-height: 21px;
 }
@@ -499,22 +473,19 @@ padding: 15px 72px 15px 72px;
 
 .details a{
 	text-align: center;
-	
 	display: block;
 	width: 110px;
-	
 	background: #81b3d2;
 	text-decoration: none;
 	color: #ffffff;
 }
 
-.book {
-	margin-left: 7px;
+.name .book {
+	width: 142px;
 }
+
 .book a{
-	
-	width: 141px;
-	
+	width: 142px;
 	background: #766357;
 	text-decoration: none;
 	color: #ffffff;
