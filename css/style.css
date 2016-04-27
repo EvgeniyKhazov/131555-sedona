@@ -32,12 +32,11 @@ h1 {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	vertical-align: bottom;
-	
 }
 
 .main-navigation li {
 	display: inline-block;
+	vertical-align: bottom;
 	width: 240px;
 	text-align: center;	
 }
@@ -51,6 +50,7 @@ h1 {
 	text-decoration: none;
 	color: #000000;
 	font-size: 14px;
+	line-height: 26px;
 	font-weight: bold;
 }
 
@@ -243,8 +243,7 @@ h1 {
 .footer-unit {
 	display: inline-block;
 	vertical-align: middle;
-	width: 400px;
-	
+	width: 400px;	
 }
 
 .hashtag a {
@@ -302,17 +301,16 @@ h1 {
 	font-size: 0px;
 	color: #ffffff;
 	background: #749cc0 url(../img/catalog-form-bg.png);
-	padding: 30px 72px;
+	padding: 0px 72px;
 	box-sizing: border-box;
 }
 
 .facilities-item {
 	display: inline-block;
+	vertical-align: bottom;
+	width: 255px;
 	background: yellow;
 	font-size: 14px;
-	vertical-align: top;
-	margin-right: 115px;
-	
 }
 
 
@@ -320,10 +318,8 @@ h1 {
 .facilities-item label {
 	display: block;
 	background: gray;
-	border: 1px solid black;
 	margin-top: 23px;
 	font-size: 14px;
-	
 }
 
 .facilities-item input {
@@ -335,11 +331,12 @@ h1 {
 	padding:0;
 	font-size: 16px;
 	line-height: 21px;
-	border: 1px solid red;
+	
 }
 
 .cost-block {
-	
+	width: 546px;
+	text-align: right;
 }
 
 .cost-block button{
@@ -348,10 +345,12 @@ h1 {
 
 .cost-block .cost-field{
 	display: inline-block;
+	vertical-align: bottom;
 }
 
 .cost-field label,input{
 	display: inline-block;
+	vertical-align: bottom;
 }
 
 .cost-field input{
@@ -359,7 +358,7 @@ h1 {
 }
 
 .cost-block input[type="range"] {
-	display: block;
+	display: inline-block;
 	
 }
 
