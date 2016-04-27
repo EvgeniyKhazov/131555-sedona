@@ -112,7 +112,7 @@ h1 {
 }
 
 .reasons .reason-blue {
-	background-color: #81b3d2;
+	background: #81b3d2;
 	color: #e2ecf4;
 }
 
@@ -436,8 +436,6 @@ h1 {
 
 /*отели*/
 
-
-
 .housing-item {
 	font-size: 0px;
 	padding: 30px 72px 30px;
@@ -459,17 +457,18 @@ h1 {
 .housing-item .rating{
 	display: inline-block;
 	vertical-align: bottom;
-	font-size: 14px;
-	line-height: 21px;
-}
-
-.rating {
 	width: 111px;
+	text-align: left;
 }
 
 .rating span{
-	padding: 4px 13px 4px 13px;
+	display: inline-block;
+	vertical-align: bottom;
+	text-align: center;
+	width: 110px;
+	padding: 3px 0px;
 	background: #f2f2f2;
+	font-size: 14px;
 }
  
 .housing-item h1{
