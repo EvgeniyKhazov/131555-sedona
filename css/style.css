@@ -15,9 +15,8 @@ h1 {
 	text-transform: uppercase;
 }
 
-span,h2,h3 {
+span,h2,h3,p {
 	text-transform: uppercase;
-	font-weight: bold;
 }
 
 .container {
@@ -106,34 +105,34 @@ span,h2,h3 {
 
 .advantages h1 {
 	display: inline-block;
+	vertical-align: top;
 	width: 440px;
 }
 
 /*Приемущества первая, третья, четвёртая строка*/
 
 .reasons {
-	
+	background: #81b3d2;
 	padding: 0;
 }
 
 .reasons .reason-item {
-	width: 400px;
-	color: #000000;
-	padding: 50px;
 	display: inline-block;
 	vertical-align: top;
 	box-sizing: border-box;
+	width: 400px;
+	color: #ffffff;
+	padding: 44px 0;
 	min-height: 256px;
+	text-align: center;
+}
+
+.reason-gray .reason-item {
 	background: #eeeeee;
-	
+	color: #000000;
 }
 
-.reasons .reason-blue {
-	background: #81b3d2;
-	color: #e2ecf4;
-}
-
-.reasons .reasons-img{
+.reasons .reasons-img {
 	display: inline-block;
 	vertical-align: top;
 }
@@ -146,27 +145,33 @@ span,h2,h3 {
 
 .services .services-item {
 	display: inline-block;
+	vertical-align: top;
 	box-sizing: border-box;
 	width: 400px;
-	padding: 50px 70px;
+	padding: 65px 0;
+	text-align: center;
 }
 
 /*Заинтересовались*/
+
+.interest {
+	padding: 50px 0 0;
+}	
 	
 .interest h3 {
 	font-size: 30px;
 	line-height: 24px;
 	width: 298px;
-	margin: 50px auto 25px;
+	margin: 0 auto 25px;
 	text-align: center;
 }
 
 .interest p {
 	line-height: 24px;
-	width: 434px;
 	margin: 0 auto 50px;
 	text-align: center;
 }
+
 .interest a {
 	display: block;
 	width: 568px;
@@ -180,7 +185,6 @@ span,h2,h3 {
 	font-family: PT Sans;
 	background: #766357;
 	padding: 32px 0;
-	
 }
 
 /*карта*/
@@ -390,7 +394,7 @@ span,h2,h3 {
 
 .find-item {
 	display: inline-block;
-	vertical-align: middle;
+	vertical-align: bottom;
 }
 
 .find-menu .number {
@@ -409,7 +413,7 @@ span,h2,h3 {
 
 .sorting span {
 	display: inline-block;
-	vertical-align: middle;
+	vertical-align: bottom;
 	font-size: 12px;
 	line-height: 18px;
 	width: 115px;
@@ -420,14 +424,14 @@ span,h2,h3 {
 	padding: 0;
 	list-style: none;
 	display: inline-block;
-	vertical-align: middle;
+	vertical-align: bottom;
 }
 
 .find-item li {
 	display: inline-block;
+	vertical-align: bottom;
 	font-size: 12px;
 	line-height: 18px;
-	vertical-align: middle;
 }
 
 .find-item a {
@@ -448,7 +452,7 @@ span,h2,h3 {
 	height: 10px;
 	font-size: 23px;
 	line-height: 20px;
-	vertical-align: middle;
+	vertical-align: bottom;
 }
 
 /*отели*/
@@ -460,13 +464,16 @@ span,h2,h3 {
 }
 
 .housing-item img {
+	display: inline-block;
 	vertical-align: bottom;
-	padding-right: 30px;
+	margin-right: 30px;
+	width: 135px;
+	height: 90px;
 }
 
 .housing-item .name {
 	display: inline-block;
-	vertical-align: bottom;
+	vertical-align: top;
 	box-sizing: border-box;
 	width: 780px;
 }
@@ -499,8 +506,8 @@ span,h2,h3 {
 
 .name .details {
 	display: inline-block;
+	vertical-align: top;
 	width: 116px;
-	vertical-align: middle;
 	font-size: 14px;
 	line-height: 21px;
 }
