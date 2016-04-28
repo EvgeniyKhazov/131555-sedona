@@ -12,6 +12,12 @@ h1 {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
+	text-transform: uppercase;
+}
+
+span,h2,h3 {
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
 .container {
@@ -23,7 +29,7 @@ h1 {
 /*хедер*/
 
 .main-header {
-	padding: 15px 0px 15px 0px;
+	padding: 15px 0 15px 0;
 	position: relative;
 	font-size: 0px;
 }
@@ -37,8 +43,19 @@ h1 {
 .main-navigation li {
 	display: inline-block;
 	vertical-align: bottom;
+	box-sizing: border-box;
 	width: 240px;
-	text-align: center;	
+	text-align: center;
+}
+
+.main-navigation li:first-child {
+	padding-left: 72px;
+	text-align: left;
+}
+
+.main-navigation li:last-child {
+	padding-right: 72px;
+	text-align: right;
 }
 
 .main-navigation li:nth-child(2){
@@ -117,7 +134,8 @@ h1 {
 }
 
 .reasons .reasons-img{
-	display: inline-block;	
+	display: inline-block;
+	vertical-align: top;
 }
 
 .reasons-img img{
