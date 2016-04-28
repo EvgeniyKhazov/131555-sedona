@@ -138,6 +138,8 @@ span,h2,h3,p {
 }
 
 .reasons-img img{
+	width: 800px;
+	height: 256px;
 	vertical-align: top;	
 }
 
@@ -204,6 +206,12 @@ span,h2,h3,p {
 	font-size: 14;
 	font-weight: bold;
 	line-height: 26px;
+}
+
+.map iframe{
+width: 1200px;
+height: 595px;
+border: 0;
 }
 
 .map input {
@@ -323,8 +331,12 @@ span,h2,h3,p {
 	font-size: 0px;
 	color: #ffffff;
 	background: #749cc0 url(../img/catalog-form-bg.png);
-	padding: 0px 72px;
+	padding: 0 72px ;
 	box-sizing: border-box;
+}
+
+.facilities form {
+	padding: 28px 0 32px;
 }
 
 .facilities-item {
@@ -463,10 +475,13 @@ span,h2,h3,p {
 	border-bottom: 1px solid #e5e5e5;
 }
 
-.housing-item img {
+.housing-item .image {
 	display: inline-block;
 	vertical-align: bottom;
-	margin-right: 30px;
+	padding-right: 30px;
+}
+
+.image img {
 	width: 135px;
 	height: 90px;
 }
