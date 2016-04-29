@@ -3,12 +3,13 @@ body {
 	line-height: 21px;
 	color: #000000;
 	font-weight: regular;
-	font-family: PT Sans;
+	font-family: "PT Sans";
 	background: #f2f2f2;
 }
 
 
 h1 {
+	font-family: "PT Sans";
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
@@ -31,6 +32,7 @@ span,h2,h3,p {
 	padding: 15px 0 15px 0;
 	position: relative;
 	font-size: 0px;
+	background: #ffffff;
 }
 
 .main-navigation ul {
@@ -100,13 +102,21 @@ span,h2,h3,p {
 .advantages {
 	text-align: center;
 	text-transform: uppercase;
-	padding: 43px 0px;
+	padding: 60px 0 53px;
 }
 
 .advantages h1 {
 	display: inline-block;
 	vertical-align: top;
 	width: 440px;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 30px;
+}
+
+.advantages p {
+	padding: 0;
+	margin: 0;
 }
 
 /*Приемущества первая, третья, четвёртая строка*/
@@ -114,21 +124,35 @@ span,h2,h3,p {
 .reasons {
 	background: #81b3d2;
 	padding: 0;
+	width: 1200px;
+}
+
+.reason-item h2 {
+	padding: 0;
+	margin: 0;
+	font-size: 21px;
+	line-height: 21px;
+	margin-bottom: 24px;
+}
+
+.reason-item p {
+	margin: 0;
+	padding: 0;
+	margin-top: 21px;
 }
 
 .reasons .reason-item {
 	display: inline-block;
 	vertical-align: top;
-	box-sizing: border-box;
 	width: 400px;
 	color: #ffffff;
-	padding: 44px 0;
-	min-height: 256px;
+	padding: 54px 0 51px;
 	text-align: center;
 }
 
 .reason-gray .reason-item {
 	background: #eeeeee;
+	padding: 48px 0 58px;
 	color: #000000;
 }
 
@@ -144,33 +168,68 @@ span,h2,h3,p {
 }
 
 /*Приемущества вторая строка*/
+.services {
+	font-size: 0px;
+}
 
 .services .services-item {
 	display: inline-block;
 	vertical-align: top;
 	box-sizing: border-box;
 	width: 400px;
-	padding: 65px 0;
+	padding: 60px 0 82px;
 	text-align: center;
+}
+
+.services-item .icon-img {
+	width: 76px;
+	height: 76px;
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 24px;
+}
+
+.services-item:last-child img {
+	position: relative;
+	bottom: 4px;	
+}
+
+.services-item h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 21px;
+	line-height: 21px;
+	margin-bottom: 25px;
+}
+
+.services-item p{
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
 }
 
 /*Заинтересовались*/
 
 .interest {
-	padding: 50px 0 0;
+	padding: 56px 0 0;
+	background: #ffffff;
 }	
 	
 .interest h3 {
+	margin: 0;
+	padding: 0;
 	font-size: 30px;
 	line-height: 24px;
 	width: 298px;
-	margin: 0 auto 25px;
+	margin: 0 auto 30px;
 	text-align: center;
 }
 
 .interest p {
+	padding: 0;
+	margin: 0;
 	line-height: 24px;
-	margin: 0 auto 50px;
+	margin: 0 auto 47px;
 	text-align: center;
 }
 
@@ -186,7 +245,7 @@ span,h2,h3,p {
 	font-weight: bold;
 	font-family: PT Sans;
 	background: #766357;
-	padding: 32px 0;
+	padding: 30px 0;
 }
 
 /*карта*/
