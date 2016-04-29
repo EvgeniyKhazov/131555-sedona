@@ -20,6 +20,47 @@ span,h2,h3,p {
 	text-transform: uppercase;
 }
 
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+
+  font-family: "symbols-sedona";
+  src: url("../fonts/symbols-sedona.woff") format("woff"),
+       url("../fonts/symbols-sedona.woff2") format("woff2");
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.2em;
+  margin-left: 0.2em;
+
+  font-weight: normal;
+  line-height: 1em;
+  font-family: "symbols-sedona";
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  font-variant: normal;
+
+  speak: none;
+}
+
+.icon-facebook::before { content: "\66"; } /* "f" */
+.icon-twitter::before { content: "\74"; } /* "t" */
+.icon-up-dir::before { content: "\25b2"; } /* "▲" */
+.icon-down-dir::before { content: "\25bc"; } /* "▼" */
+.icon-star::before { content: "\2605"; } /* "★" */
+.icon-check-off::before { content: "\2610"; } /* "☐" */
+.icon-check-on::before { content: "\2611"; } /* "☑" */
+.icon-calendar::before { content: "\e800"; } /* "" */
+.icon-plus::before { content: "\e801"; } /* "" */
+.icon-minus::before { content: "\e802"; } /* "" */
+.icon-youtube::before { content: "\f39e"; } /* "" */
+
+
 .container {
 	margin: 0 auto;
 	width: 1200px;
@@ -253,72 +294,88 @@ span,h2,h3,p {
 .map {
 	background: url("../img/map-bg.png");
 	min-height: 593px;
+	position: relative;
 }
 
 /*форма*/
 
-.map form {
-	width: 568px;
-	background: yellow;
-	box-sizing: border-box;
-	margin: 0 auto;
-	font-size: 14;
-	font-weight: bold;
-	line-height: 26px;
+.map iframe {
+	width: 1200px;
+	height: 593px;
+	border: 0;
 }
 
-.map iframe{
-width: 1200px;
-height: 595px;
-border: 0;
+.map form {
+	width: 568px;
+	background: #ffffff;
+	box-sizing: border-box;
+	margin: 0 auto;
+	font-size: 0px;
+	font-weight: bold;
+	line-height: 26px;
+	padding: 55px;
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left: -284px;
 }
 
 .map input {
+	display: inline-block;
+	vertical-align: top;
 	background: #f2f2f2;
-	border: none;
-	min-height: 38px;
-}
-
-.map label[for="check-in-field"]{
-	background: red;
-	width: 91px;
-	margin-right: 20px;
-	margin-left: 56px;
-}
-
-.map input[id="check-in-field"] {
 	width: 346px;
-	margin-right: 55px;
-	margin-top: 55px;
-	margin-bottom: 29px;
-	
+	height: 38px;
+	border: 0;
+	font-size: 14px;
+	box-sizing: border-box;
+	text-transform: uppercase;
 }
 
-.map label[for="check-out-field"]{
-	background: red;
-	width: 94px;
-	margin-right: 18px;
-	margin-left: 54px;
+
+
+.map label {
+	display: inline-block;
+	vertical-align: top;
+	width: 112px;
+	padding: 6px 0;
+	box-sizing: border-box;
+	font-size: 14px;
+	margin-bottom: 30px;
 }
 
-.map input[id="check-out-field"] {
-	width: 346px;
-	margin-right: 55px;
-	
+.map label[for="children-field"]{
+	width: 65px;
+	margin-left: 53px;
 }
 
-.map label[for="adults-field"] {
-	margin-left: 55px;
-	margin-right: 41px;
-	background: red;
+.map input[name="adults"],input[name="children"]{
+	width: 38px;
+	box-sizing: border-box;
+	text-align: center;
 }
 
 .map button {
-	border: none;
-	border-radius: none;
-	min-height: 38px;
+	border: 0;
 	margin: 0;
+	padding: 0;
+	width: 38px;
+	height: 38px;
+	box-sizing: border-box;
+	font-size: 14px;
+	background: #f2f2f2;
 }
+
+.map button[type="submit"] {
+	width: 458px;
+	height: 58px;
+	box-sizing: border-box;
+	text-align: center;
+	background: #81b3d2;
+	color: #ffffff;
+}
+
+
 
 /*футер*/
 
@@ -326,6 +383,9 @@ border: 0;
 	padding: 36px 0px;
 	text-align: center;
 	font-size: 0px;
+	position: absolute;
+	margin-top: -130px;
+	background: rgba(254, 254, 254, 0.9);
 	
 }
 
@@ -346,10 +406,25 @@ border: 0;
 
 .social a {
 	display: inline-block;
+	vertical-align: middle;
 	width: 46px;
 	min-height: 48px;
+	box-sizing: border-box;
 	background: #81b3d2;
 	margin-right: 6px;
+	padding: 13px 0;
+}
+
+.social i {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 19px;
+	color: #ffffff;
+	line-height: 20px;
+}
+
+.social .social-yt{
+	font-size: 23px;
 }
 
 .social a:last-child {
