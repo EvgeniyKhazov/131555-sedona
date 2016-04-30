@@ -70,7 +70,7 @@ span,h2,h3,p {
 /*хедер*/
 
 .main-header {
-	padding: 15px 0 15px 0;
+	padding: 14px 0 16px 0;
 	position: relative;
 	font-size: 0px;
 	background: #ffffff;
@@ -84,10 +84,11 @@ span,h2,h3,p {
 
 .main-navigation li {
 	display: inline-block;
-	vertical-align: bottom;
+	vertical-align: top;
 	box-sizing: border-box;
 	width: 240px;
 	text-align: center;
+	outline: 1px solid green;
 }
 
 .main-navigation li:first-child {
@@ -105,12 +106,15 @@ span,h2,h3,p {
 }
 
 .main-navigation a {
-	display: block;
+	display: inline-block;
+	vertical-align: top;
+	
 	text-decoration: none;
 	color: #000000;
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: bold;
+	outline: 1px solid red;
 }
 
 .header-logo {
@@ -465,20 +469,13 @@ span,h2,h3,p {
 
 .social .icon-youtube{
 	font-size: 23px;
+	vertical-align: top;
 }
 
 .social a:last-child {
 	margin-right: 0px;
+	padding: 12px 0;
 }
-
-.html-academy a {
-	display: inline-block;
-	vertical-align: bottom;
-	background: url(../img/academy-sprite.png);
-	width: 113px;
-	height: 40px;
-}
-
 
 .html-academy span {
 	text-align: left;
@@ -489,13 +486,29 @@ span,h2,h3,p {
 	line-height: 26px;
 }
 
-.html-academy a:hover {
-	background-position: 0 -48px;
+.html-academy a {
+	display: inline-block;
+	vertical-align: bottom;
+	background: url(../img/academy-sprite.png);
+	width: 113px;
+	height: 40px;
 }
 
 .html-academy a:visited {
 	background-position: 0 -95px;
 }
+
+.html-academy a:hover {
+	background-position: 0 -48px;
+}
+
+
+
+
+
+
+
+
 
 /*каталог*/
 
