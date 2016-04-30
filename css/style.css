@@ -294,6 +294,7 @@ span,h2,h3,p {
 .map {
 	background: url("../img/map-bg.png");
 	min-height: 593px;
+	box-sizing: border-box;
 	position: relative;
 }
 
@@ -303,6 +304,9 @@ span,h2,h3,p {
 	width: 1200px;
 	height: 593px;
 	border: 0;
+	padding: 0;
+	margin: 0;
+	display: block;
 }
 
 .map form {
@@ -332,7 +336,26 @@ span,h2,h3,p {
 	text-transform: uppercase;
 }
 
+.map .calendar {
+	
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: regular;
+	position: absolute;
+	left: 479px;
+}
 
+.map .icon-calendar {
+	color: #c2c2c2;
+}
+
+.map input[name="check-in"] {
+	padding-left: 15px;
+}
+
+.map input[name="check-out"] {
+	padding-left: 12px;
+}
 
 .map label {
 	display: inline-block;
@@ -341,12 +364,21 @@ span,h2,h3,p {
 	padding: 6px 0;
 	box-sizing: border-box;
 	font-size: 14px;
-	margin-bottom: 30px;
+	margin-bottom: 29px;
+	
 }
 
 .map label[for="children-field"]{
 	width: 65px;
 	margin-left: 53px;
+}
+
+.map label[for="check-out-field"] {
+	margin-bottom: 30px;
+}
+
+.map i {
+	color: #a9a9a9;
 }
 
 .map input[name="adults"],input[name="children"]{
@@ -367,12 +399,16 @@ span,h2,h3,p {
 }
 
 .map button[type="submit"] {
+	margin: 0;
+	margin-top: 25px;
 	width: 458px;
 	height: 58px;
 	box-sizing: border-box;
 	text-align: center;
 	background: #81b3d2;
 	color: #ffffff;
+	font-size: 21px;
+	line-height: 26px;
 }
 
 
@@ -384,8 +420,10 @@ span,h2,h3,p {
 	text-align: center;
 	font-size: 0px;
 	position: absolute;
-	margin-top: -130px;
+	margin-top: -120px;
 	background: rgba(254, 254, 254, 0.9);
+	min-height: 120px;
+	box-sizing: border-box;
 	
 }
 
@@ -397,6 +435,8 @@ span,h2,h3,p {
 
 .hashtag a {
 	text-decoration: none;
+	display: inline-block;
+	vertical-align: middle;
 	font-size: 21px;
 	font-weight: bold;
 	line-height: 26px;
@@ -406,9 +446,9 @@ span,h2,h3,p {
 
 .social a {
 	display: inline-block;
-	vertical-align: middle;
+	vertical-align: top;
 	width: 46px;
-	min-height: 48px;
+	height: 48px;
 	box-sizing: border-box;
 	background: #81b3d2;
 	margin-right: 6px;
@@ -423,7 +463,7 @@ span,h2,h3,p {
 	line-height: 20px;
 }
 
-.social .social-yt{
+.social .icon-youtube{
 	font-size: 23px;
 }
 
@@ -444,7 +484,7 @@ span,h2,h3,p {
 	text-align: left;
 	display: inline-block;
 	width: 82px;
-	padding: 7px 0px; 
+	padding: 9px 0px; 
 	font-size: 14px;
 	line-height: 26px;
 }
