@@ -33,28 +33,40 @@
 				<form action="https://echo.htmlacademy.ru" method="post">
 					<div class="facilities-item">
 						<h2>ИНФРАСТРУКТУРА:</h2>
-						<label><input type="checkbox" name="infastructure" value="POOL">БАССЕЙН</label>
-						<label><input type="checkbox" name="infastructure" value="PARKING">ПАРКОВКА</label>
-						<label><input type="checkbox" name="infastructure" value="WI-FI">WI-FI</label>
+						<input id="pool-field" type="checkbox" name="infastructure" value="POOL" checked><label for="pool-field">БАССЕЙН</label>
+						<input id="parking-field" type="checkbox" name="infastructure" value="PARKING"><label for="parking-field">ПАРКОВКА</label>
+						<input id="wi-fi-field" type="checkbox" name="infastructure" value="WI-FI"><label for="wi-fi-field">WI-FI</label>
 					</div>
 					<div class="facilities-item">
 						<h2>ТИП ЖИЛЬЯ:</h2>
-						<label><input type="checkbox" name="house" value="HOTEL">ОТЕЛЬ</label>
-						<label><input type="checkbox" name="house" value="MOTEL">МОТЕЛЬ</label>
-						<label><input type="checkbox" name="house" value="APARTMENTS">АППАРТАМЕНТЫ</label>
+						<input id="hotel-field" type="checkbox" name="house" value="HOTEL" checked><label for="hotel-field">ГОСТИНИЦА</label>
+						<input id="motel-field" type="checkbox" name="house" value="MOTEL" checked><label for="motel-field">МОТЕЛЬ</label>
+						<input id="apartments-field" type="checkbox" name="house" value="APARTMENTS" checked><label for="apartments-field">АПАРТАМЕНТЫ</label>
 					</div>
 					<div class="facilities-item cost-block">
-						<h2>СТОИМОСТЬ В СУТКИ (Р):</h2>
-						<div class="cost-field from">
-							<label for="from-field">ОТ</label>
-							<input type="text" name="from" id="from-field" value="0">
+						<div class="positioner">
+							<h2>СТОИМОСТЬ В СУТКИ (Р):</h2>
+							<div class="border">
+								<div class="cost-field from">
+									<label for="from-field">ОТ</label>
+									<input type="text" name="from" id="from-field" value="0">
+								</div>
+								<div class="line"></div>
+								<div class="cost-field to">
+									<label for="to-field">ДО</label>
+									<input type="text" name="to" id="to-field" value="3000">
+								</div>
+							</div>	
+							<div class="range-controls">
+								<div class="scale">
+									<div class="bar"></div>
+								</div>
+								<div class="range-toggle range-toggle-min"></div>
+								<div class="range-toggle range-toggle-max"></div>
+							</div>
+							<button type="submit">ПОКАЗАТЬ</button>
 						</div>
-						<div class="cost-field to">
-							<label for="to-field">ДО</label>
-							<input type="text" name="to" id="to-field" value="3000">
-						</div>
-						<input type="range" min="1" max="3000" step="1">
-						<button>ПОКАЗАТЬ</button>
+					
 					</div>
 				</form>
 			</section>
@@ -76,10 +88,10 @@
 				<div class="find-item moving">
 					<ul>
 						<li>
-							<a href="#"><img src="http://placehold.it/150x100" alt="down"></a>
+							<a href="#"><i class="icon-up-dir"></i></a>
 						</li>
 						<li>
-							<a href="#"><img src="http://placehold.it/150x100" alt="up"></a>
+							<a href="#"><i class="icon-down-dir"></i></a>
 						</li>
 					</ul>	
 				</div>
@@ -162,14 +174,13 @@
 			<footer class="main-footer">
 				<div class="footer-unit hashtag"><a href="#">#visitsedona</a></div>
 				<div class="footer-unit social">
-					<a class="social-tw" href="http://www.twitter.com"></a>
-					<a class="social-fb" href="http://www.facebook.com"></a>
-					<a class="social-yt" href="https://www.youtube.com/"></a>
+					<a class="social-tw" href="http://www.twitter.com"><i class="icon-twitter"></i></a>
+					<a class="social-fb" href="http://www.facebook.com"><i class="icon-facebook"></i></a>
+					<a class="social-yt" href="https://www.youtube.com/"><i class="icon-youtube"></i></a>
 				</div>
 				<div class="footer-unit html-academy">
 					<span>WEBSITE BY</span>
-					<a href="https://htmlacademy.ru/">	
-					</a>
+					<a href="https://htmlacademy.ru/"></a>
 				</div>
 			</footer>
 			

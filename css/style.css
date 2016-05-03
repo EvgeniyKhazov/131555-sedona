@@ -88,7 +88,6 @@ span,h2,h3,p {
 	box-sizing: border-box;
 	width: 240px;
 	text-align: center;
-	outline: 1px solid green;
 }
 
 .main-navigation li:first-child {
@@ -114,7 +113,6 @@ span,h2,h3,p {
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: bold;
-	outline: 1px solid red;
 }
 
 .header-logo {
@@ -491,24 +489,16 @@ span,h2,h3,p {
 	vertical-align: bottom;
 	background: url(../img/academy-sprite.png);
 	width: 113px;
-	height: 40px;
-}
-
-.html-academy a:visited {
-	background-position: 0 -95px;
+	height: 42px;
 }
 
 .html-academy a:hover {
 	background-position: 0 -48px;
 }
 
-
-
-
-
-
-
-
+.html-academy a:active {
+	background-position: 0 -95px;
+}
 
 /*каталог*/
 
@@ -518,69 +508,226 @@ span,h2,h3,p {
 	font-size: 0px;
 	color: #ffffff;
 	background: #749cc0 url(../img/catalog-form-bg.png);
-	padding: 0 72px ;
+	padding: 27px 72px 30px;
 	box-sizing: border-box;
-}
-
-.facilities form {
-	padding: 28px 0 32px;
 }
 
 .facilities-item {
 	display: inline-block;
-	vertical-align: bottom;
+	vertical-align: top;
 	width: 255px;
-	background: yellow;
+	box-sizing: border-box;
+	
 	font-size: 14px;
-}
-
-
-
-.facilities-item label {
-	display: block;
-	background: gray;
-	margin-top: 23px;
-	font-size: 14px;
-}
-
-.facilities-item input {
-	margin-right: 18px;
 }
 
 .facilities-item h2 {
 	margin:0;
 	padding:0;
-	font-size: 16px;
-	line-height: 21px;
+	margin-bottom: 25px;
+	font-size: 16px;	
+}
+
+input[type="checkbox"] {
+	display: none;
+}
+
+input[type="checkbox"] + label {
+	display: block;
+	width: 255px;
+	height: 22px;
+	box-sizing: border-box;
+	cursor: pointer;
+	padding-left: 40px;
+	margin-bottom: 24px;
+	position: relative;
 	
+}
+
+input[type="checkbox"] + label:before {
+	content: "\2610";
+	width: 25px;
+	height: 22px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-size: 26px;
+	font-family: "symbols-sedona";
+}
+
+input[type="checkbox"]:checked + label:before {
+	content: "\2611";
+}
+
+input[type="checkbox"] + label:last-child {
+	margin-bottom: 0px;
+}
+
+input[type="checkbox"] + label:disabled {
+	color: #6a6a6a;
+}
+
+/*ФОРМА СТОИМОСТЬ*/
+
+.positioner {
+	font-size: 0px;
+	display: inline-block;
+	vertical-align: top;
+	width: 328px;
+	box-sizing: border-box;
+	text-align:right;
 }
 
 .cost-block {
 	width: 546px;
 	text-align: right;
+	box-sizing: border-box;
 }
 
-.cost-block button{
-	display: block;
+.positioner h2{
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0;
+	text-align: left;
+	font-size: 16px;
 }
 
-.cost-block .cost-field{
+.border {
+	border: 2px solid #ffffff;
 	display: inline-block;
-	vertical-align: bottom;
-}
-
-.cost-field label,input{
-	display: inline-block;
-	vertical-align: bottom;
-}
-
-.cost-field input{
-	width: 80px;
-}
-
-.cost-block input[type="range"] {
-	display: inline-block;
+	border-radius: 2px;
+	margin-bottom: 20px;
 	
+}
+
+.cost-field {
+	height: 32px;
+	box-sizing: border-box;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.line {
+	display: inline-block;
+	vertical-align: middle;
+	width: 2px;
+	height: 22px;
+	box-sizing: border-box;
+	border: 1px solid #ffffff;
+	margin-top: 5px;
+}
+
+.from {
+	width: 157px;
+}
+
+.to {
+	width: 155px;
+}
+
+.cost-field input[type="text"] {
+	display: inline-block;
+	vertical-align: top;
+	line-height: 32px;
+	box-sizing: border-box;
+	border: none;
+	background: none;
+	color: #ffffff;
+	font-size: 14px;
+	padding: 0;
+	padding-left: 4px;
+}
+
+.from input[type="text"] {
+	width: 75px;
+}
+
+.to input[type="text"] {
+	width: 84px;
+}
+
+.cost-field label {
+	display: inline-block;
+	vertical-align: top;
+	line-height: 32px;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+
+.cost-field input:focus {
+	outline: none;
+}
+
+.from label {
+	width: 82px;
+}
+
+.to label {
+	width: 71px;
+}
+
+/*ПОЛОСА*/
+
+.range-controls {
+	margin-left: 10px;
+	position: relative;
+	margin-bottom: 32px;
+}
+
+.range-controls .scale {
+	height: 2px;
+	width: 317px;
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+	width: 80%;
+	height: 2px;
+	background: #ffffff;
+}
+
+.range-toggle {
+	position: absolute;
+	top: -9px;
+	width: 4px;
+	height: 4px;
+	background: #ababab;
+	border: 8px solid #ffffff;
+	border-radius: 50%;
+	box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+	cursor: pointer;
+}
+
+.range-toggle:hover {
+	background: #1c4f80;
+}
+
+.range-toggle-min {
+	left: 0;
+}
+
+.range-toggle-max {
+	left: 80%;
+}
+
+/*КНОПКА*/
+
+.positioner button {
+	padding: 0;
+	padding: 6px 0 5px;
+	font-size: 14px;
+	width: 137px;
+	border: 2px solid #ffffff;
+	border-radius: 2px;
+	text-align: center;
+	background: none;
+	color: #ffffff;
+	margin-right: 96px;
+}
+
+.positioner button:hover {
+	background: #ffffff;
+	color: #000000;
 }
 
 /*НАЙДЕНО*/
@@ -594,6 +741,7 @@ span,h2,h3,p {
 .find-item {
 	display: inline-block;
 	vertical-align: bottom;
+	
 }
 
 .find-menu .number {
@@ -616,6 +764,8 @@ span,h2,h3,p {
 	font-size: 12px;
 	line-height: 18px;
 	width: 115px;
+	padding-bottom: 2px;
+	
 }
 
 .find-item ul{
@@ -631,10 +781,21 @@ span,h2,h3,p {
 	vertical-align: bottom;
 	font-size: 12px;
 	line-height: 18px;
+	padding-bottom: 2px;
 }
 
-.find-item a {
+.sorting a {
+	color: rgba(0,0,0, 0.3);
 	text-decoration: none;
+	border-bottom: 1px dotted ;
+}
+
+.sorting a:hover {
+	color: #81b3d2;
+}
+
+.sorting a:active {
+	color: #000000;
 }
 
 .sorting li {
@@ -642,16 +803,36 @@ span,h2,h3,p {
 }
 
 .moving {
+	position: relative;
 	width: 110px;
 	text-align: right;
 }
 
-.moving img {
-	width: 11px;
-	height: 10px;
+.moving i {
+	
 	font-size: 23px;
 	line-height: 20px;
-	vertical-align: bottom;
+	color: #cccccc;
+	position: absolute;
+	right: -12px;
+	bottom: 1px;
+	
+}
+
+.moving i:hover {
+	color: #000000;
+}
+
+.moving i:active {
+	color: #81b3d2;
+}
+
+.moving .icon-down-dir {
+	
+}
+
+.moving .icon-up-dir {
+	right: 10px;
 }
 
 /*отели*/
