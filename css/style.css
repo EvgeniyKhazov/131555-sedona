@@ -338,17 +338,34 @@ span,h2,h3,p {
 	text-transform: uppercase;
 }
 
+.map input:focus {
+	outline: none;
+}
+
+.map .check-field:hover {
+	background: #ebebeb;
+}
+
+.map .check-field:active {
+	background: #ffffff;
+	outline: 2px solid #e5e5e5;
+}
+
 .map .calendar {
-	
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: regular;
 	position: absolute;
 	left: 479px;
+	color: #c2c2c2;
 }
 
-.map .icon-calendar {
-	color: #c2c2c2;
+.map .calendar:hover {
+	color: #000000;
+}
+
+.map .calendar:active {
+	color: #81b3d2;
 }
 
 .map input[name="check-in"] {
@@ -367,7 +384,6 @@ span,h2,h3,p {
 	box-sizing: border-box;
 	font-size: 14px;
 	margin-bottom: 29px;
-	
 }
 
 .map label[for="children-field"]{
@@ -377,10 +393,6 @@ span,h2,h3,p {
 
 .map label[for="check-out-field"] {
 	margin-bottom: 30px;
-}
-
-.map i {
-	color: #a9a9a9;
 }
 
 .map input[name="adults"],input[name="children"]{
@@ -398,6 +410,15 @@ span,h2,h3,p {
 	box-sizing: border-box;
 	font-size: 14px;
 	background: #f2f2f2;
+	color: #a9a9a9;
+}
+
+.map button:hover {
+	color: #000000;
+}
+
+.map button:active {
+	color: #81b3d2;
 }
 
 .map button[type="submit"] {
@@ -413,7 +434,18 @@ span,h2,h3,p {
 	line-height: 26px;
 }
 
+.map button[type="submit"]:hover {
+	background: #669ec0;
+}
 
+.map button[type="submit"]:active {
+	background: #669ec0;
+	color: rgba(254,254,254, 0.3);
+}
+
+.map button:focus {
+	outline: none;
+}
 
 /*футер*/
 
@@ -426,7 +458,6 @@ span,h2,h3,p {
 	background: rgba(254, 254, 254, 0.9);
 	min-height: 120px;
 	box-sizing: border-box;
-	
 }
 
 .catalog-footer {
@@ -466,13 +497,22 @@ span,h2,h3,p {
 	background: #81b3d2;
 	margin-right: 6px;
 	padding: 13px 0;
+	color: #ffffff;
+}
+
+.social a:hover {
+	background: #669ec0;
+}
+
+.social a:active {
+	background: #5496bd;
+	color: rgba(255,255,255,0.3);
 }
 
 .social i {
 	display: inline-block;
 	vertical-align: top;
 	font-size: 19px;
-	color: #ffffff;
 	line-height: 20px;
 }
 
@@ -528,7 +568,6 @@ span,h2,h3,p {
 	vertical-align: top;
 	width: 255px;
 	box-sizing: border-box;
-	
 	font-size: 14px;
 }
 
@@ -608,7 +647,6 @@ input[type="checkbox"] + label:disabled {
 	display: inline-block;
 	border-radius: 2px;
 	margin-bottom: 20px;
-	
 }
 
 .cost-field {
@@ -666,6 +704,10 @@ input[type="checkbox"] + label:disabled {
 }
 
 .cost-field input:focus {
+	outline: none;
+}
+
+.positioner button:focus {
 	outline: none;
 }
 
@@ -820,14 +862,12 @@ input[type="checkbox"] + label:disabled {
 }
 
 .moving i {
-	
 	font-size: 23px;
 	line-height: 20px;
 	color: #cccccc;
 	position: absolute;
 	right: -12px;
 	bottom: 1px;
-	
 }
 
 .moving i:hover {
@@ -836,10 +876,6 @@ input[type="checkbox"] + label:disabled {
 
 .moving i:active {
 	color: #81b3d2;
-}
-
-.moving .icon-down-dir {
-	
 }
 
 .moving .icon-up-dir {
@@ -852,7 +888,6 @@ input[type="checkbox"] + label:disabled {
 	font-size: 0px;
 	padding: 25px 72px 30px;
 	border-bottom: 1px solid #e5e5e5;
-	
 }
 
 .housing-item .image {
@@ -860,7 +895,6 @@ input[type="checkbox"] + label:disabled {
 	vertical-align: bottom;
 	padding-right: 30px;
 	padding-top: 5px;
-	
 }
 
 .image img {
@@ -868,7 +902,6 @@ input[type="checkbox"] + label:disabled {
 	vertical-align: bottom;
 	width: 135px;
 	height: 90px;
-	
 }
 
 .housing-item .name {
@@ -876,16 +909,13 @@ input[type="checkbox"] + label:disabled {
 	vertical-align: top;
 	box-sizing: border-box;
 	width: 780px;
-	
 }
 
 .housing-item .rating{
 	display: inline-block;
 	vertical-align: bottom;
 	width: 111px;
-	text-align: right;
-	
-	
+	text-align: right;	
 }
 
 .rating span{
@@ -907,6 +937,14 @@ input[type="checkbox"] + label:disabled {
 .name a {
 	text-decoration: none;
 	color: #000000;
+}
+
+.name a:hover {
+	color: #81b3d2;
+}
+
+.name a:active {
+	color: rgba(0,0,0,0.3)
 }
 
 .name .details {
@@ -933,13 +971,31 @@ input[type="checkbox"] + label:disabled {
 	padding: 3px 0 3px;
 }
 
+.details a:hover{
+	background:#669ec0;
+	color: #ffffff;
+}
 
+.details a:active{
+	background:#669ec0;
+	color: rgba(255,255,255,0.3);
+}
 
 .book a{
 	width: 142px;
 	background: #766357;
 	text-decoration: none;
 	color: #ffffff;
+}
+
+.book a:hover{
+	background:#604e43;
+	color: #ffffff;
+}
+
+.book a:active{
+	background:#503e33;
+	color: rgba(255,255,255,0.3);
 }
 
 .rating .icon-star {
@@ -949,9 +1005,6 @@ input[type="checkbox"] + label:disabled {
 	margin-right: -4px;
 	margin-bottom:45px;
 	color: #81b3d2;
-	
-	
-	
 }
 
 
