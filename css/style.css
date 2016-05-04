@@ -20,11 +20,11 @@ span,h2,h3,p {
 
 @font-face {
 	font-weight: normal;
-  font-style: normal;
+	font-style: normal;
 
-  font-family: "PT Sans Bold"
-  src: url("../fonts/ptsansbold.woff") format("woff"),
-  url("../fonts/ptsansbold.woff2") format("woff2");
+	font-family: "PT Sans Bold"
+	src: url("../fonts/ptsansbold.woff") format("woff"),
+	url("../fonts/ptsansbold.woff2") format("woff2");
 }
 
 @font-face {
