@@ -429,6 +429,17 @@ span,h2,h3,p {
 	
 }
 
+.catalog-footer {
+	padding: 36px 0px;
+	text-align: center;
+	font-size: 0px;
+	display: static;
+	margin: 0;
+	background: #fefefe;
+	min-height: 120px;
+	box-sizing: border-box;
+}
+
 .footer-unit {
 	display: inline-block;
 	vertical-align: middle;
@@ -839,19 +850,25 @@ input[type="checkbox"] + label:disabled {
 
 .housing-item {
 	font-size: 0px;
-	padding: 30px 72px 30px;
+	padding: 25px 72px 30px;
 	border-bottom: 1px solid #e5e5e5;
+	
 }
 
 .housing-item .image {
 	display: inline-block;
 	vertical-align: bottom;
 	padding-right: 30px;
+	padding-top: 5px;
+	
 }
 
 .image img {
+	display: inline-block;
+	vertical-align: bottom;
 	width: 135px;
 	height: 90px;
+	
 }
 
 .housing-item .name {
@@ -859,13 +876,16 @@ input[type="checkbox"] + label:disabled {
 	vertical-align: top;
 	box-sizing: border-box;
 	width: 780px;
+	
 }
 
 .housing-item .rating{
 	display: inline-block;
 	vertical-align: bottom;
 	width: 111px;
-	text-align: left;
+	text-align: right;
+	
+	
 }
 
 .rating span{
@@ -876,15 +896,17 @@ input[type="checkbox"] + label:disabled {
 	padding: 3px 0px;
 	background: #f2f2f2;
 	font-size: 14px;
+	color: #666666;
 }
  
-.housing-item h1{
+.name h1{
 	margin: 0;
 	padding: 0;
 }
 
-.housing-item h1 a{
+.name a {
 	text-decoration: none;
+	color: #000000;
 }
 
 .name .details {
@@ -897,6 +919,7 @@ input[type="checkbox"] + label:disabled {
 
 .details span {
 	display: block;
+	padding: 7px 0 14px;
 }
 
 .details a{
@@ -906,11 +929,11 @@ input[type="checkbox"] + label:disabled {
 	background: #81b3d2;
 	text-decoration: none;
 	color: #ffffff;
+	font-weight: bold;
+	padding: 3px 0 3px;
 }
 
-.name .book {
-	width: 142px;
-}
+
 
 .book a{
 	width: 142px;
@@ -918,4 +941,17 @@ input[type="checkbox"] + label:disabled {
 	text-decoration: none;
 	color: #ffffff;
 }
+
+.rating .icon-star {
+	display: inline-block;
+	font-size: 19px;
+	line-height: 21px;
+	margin-right: -4px;
+	margin-bottom:45px;
+	color: #81b3d2;
+	
+	
+	
+}
+
 
