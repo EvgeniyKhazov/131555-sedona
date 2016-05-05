@@ -14,15 +14,10 @@ h1 {
 	text-transform: uppercase;
 }
 
-span,h2,h3,p {
-	text-transform: uppercase;
-}
-
 @font-face {
 	font-weight: normal;
 	font-style: normal;
-
-	font-family: "PT Sans Bold"
+	font-family: "PT Sans Bold";
 	src: url("../fonts/ptsansbold.woff") format("woff"),
 	url("../fonts/ptsansbold.woff2") format("woff2");
 }
@@ -30,7 +25,6 @@ span,h2,h3,p {
 @font-face {
   font-weight: normal;
   font-style: normal;
-
   font-family: "symbols-sedona";
   src: url("../fonts/symbols-sedona.woff") format("woff"),
        url("../fonts/symbols-sedona.woff2") format("woff2");
@@ -72,6 +66,7 @@ span,h2,h3,p {
 	margin: 0 auto;
 	width: 1200px;
 	background: #ffffff;
+	box-shadow: 0 5px 15px rgba(0,1,1,0.2);
 }
 
 /*хедер*/
@@ -118,7 +113,8 @@ span,h2,h3,p {
 	color: #000000;
 	font-size: 14px;
 	line-height: 26px;
-	font-weight: bold;
+	font-family: "PT Sans Bold";
+	font-weight: normal;
 }
 
 .main-navigation a:hover{
@@ -175,13 +171,16 @@ span,h2,h3,p {
 }
 
 .advantages h1 {
+	margin: 0;
+	padding: 0;
 	display: inline-block;
 	vertical-align: top;
-	width: 440px;
+	width: 500px;
 	padding: 0;
 	margin: 0;
 	margin-bottom: 30px;
 	font-family: "PT Sans bold";
+	font-weight: normal;
 }
 
 .advantages p {
@@ -203,12 +202,16 @@ span,h2,h3,p {
 	font-size: 21px;
 	line-height: 21px;
 	margin-bottom: 24px;
+	font-family: "PT Sans Bold";
+	font-weight: normal;
+	text-transform: uppercase;
 }
 
 .reason-item p {
 	margin: 0;
 	padding: 0;
 	margin-top: 21px;
+	text-transform: uppercase;
 }
 
 .reasons .reason-item {
@@ -267,15 +270,19 @@ span,h2,h3,p {
 .services-item h2 {
 	margin: 0;
 	padding: 0;
+	margin-bottom: 25px;
 	font-size: 21px;
 	line-height: 21px;
-	margin-bottom: 25px;
+	font-family: "PT Sans bold";
+	font-weight: normal;
+	text-transform: uppercase;
 }
 
 .services-item p{
 	margin: 0;
 	padding: 0;
 	font-size: 14px;
+	text-transform: uppercase;
 }
 
 /*Заинтересовались*/
@@ -288,11 +295,15 @@ span,h2,h3,p {
 .interest h3 {
 	margin: 0;
 	padding: 0;
-	font-size: 30px;
-	line-height: 24px;
 	width: 298px;
 	margin: 0 auto 30px;
 	text-align: center;
+	font-size: 30px;
+	line-height: 24px;
+	font-family: "PT Sans bold";
+	font-weight: normal;
+	text-transform: uppercase;
+	
 }
 
 .interest p {
@@ -301,20 +312,23 @@ span,h2,h3,p {
 	line-height: 24px;
 	margin: 0 auto 47px;
 	text-align: center;
+	text-transform: uppercase;
 }
 
 .interest a {
 	display: block;
 	width: 568px;
 	margin: 0 auto;
+	padding: 30px 0;
 	text-align: center;
 	text-decoration: none;
 	font-size: 21px;
 	line-height: 26px;
+	font-family: "PT Sans bold";
+	font-weight: normal;
 	color: #ffffff;
-	font-weight: bold;
 	background: #766357;
-	padding: 30px 0;
+	
 }
 
 /*карта*/
@@ -343,13 +357,15 @@ span,h2,h3,p {
 	box-sizing: border-box;
 	margin: 0 auto;
 	font-size: 0px;
-	font-weight: bold;
+	font-family: "PT Sans bold";
+	font-weight: normal;
 	line-height: 26px;
 	padding: 55px;
 	position: absolute;
 	top: 0px;
 	left: 50%;
 	margin-left: -284px;
+	box-shadow: 0 7px 15px rgba(0,1,1,0.15);
 }
 
 .map input {
@@ -380,7 +396,6 @@ span,h2,h3,p {
 .map .calendar {
 	font-size: 21px;
 	line-height: 26px;
-	font-weight: regular;
 	position: absolute;
 	left: 479px;
 	color: #c2c2c2;
@@ -507,8 +522,9 @@ span,h2,h3,p {
 	display: inline-block;
 	vertical-align: middle;
 	font-size: 21px;
-	font-weight: bold;
 	line-height: 26px;
+	font-family: "PT Sans bold";
+	font-weight: normal;
 	color: #000000;
 	text-transform: uppercase;
 }
@@ -600,7 +616,9 @@ span,h2,h3,p {
 	margin:0;
 	padding:0;
 	margin-bottom: 25px;
-	font-size: 16px;	
+	font-size: 16px;
+	font-family: "PT Sans bold";
+	font-weight: normal;	
 }
 
 input[type="checkbox"] {
@@ -829,6 +847,8 @@ input[type="checkbox"] + label:disabled {
 	font-size: 21px;
 	line-height: 26px;
 	margin: 0;
+	font-family: "PT Sans bold";
+	font-weight: normal;
 }
 
 .find-menu .sorting {
@@ -959,6 +979,8 @@ input[type="checkbox"] + label:disabled {
 }
 
 .name a {
+	font-family: "PT Sans bold";
+	font-weight: normal;
 	text-decoration: none;
 	color: #000000;
 }
