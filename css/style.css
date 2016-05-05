@@ -2,13 +2,13 @@ body {
 	font-size: 14px;
 	line-height: 21px;
 	color: #000000;
-	font-family: "PT Sans";
+	font-family: "PT Sans", Arial, sans-serif;
 	background: #f2f2f2;
 }
 
-
 h1 {
 	font-family: "PT Sans Bold";
+	font-weight: normal;
 	font-size: 21px;
 	line-height: 26px;
 	text-transform: uppercase;
@@ -23,30 +23,28 @@ h1 {
 }
 
 @font-face {
-  font-weight: normal;
-  font-style: normal;
-  font-family: "symbols-sedona";
-  src: url("../fonts/symbols-sedona.woff") format("woff"),
-       url("../fonts/symbols-sedona.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+	font-family: "symbols-sedona";
+	src: url("../fonts/symbols-sedona.woff") format("woff"),
+	   url("../fonts/symbols-sedona.woff2") format("woff2");
 }
 
 [class^="icon-"]::before,
 [class*=" icon-"]::before {
-  display: inline-block;
-  width: 1em;
-  margin-right: 0.2em;
-  margin-left: 0.2em;
-
-  font-weight: normal;
-  line-height: 1em;
-  font-family: "symbols-sedona";
-  text-align: center;
-  text-transform: none;
-  text-decoration: inherit;
-  font-style: normal;
-  font-variant: normal;
-
-  speak: none;
+	display: inline-block;
+	width: 1em;
+	margin-right: 0.2em;
+	margin-left: 0.2em;
+	font-weight: normal;
+	line-height: 1em;
+	font-family: "symbols-sedona";
+	text-align: center;
+	text-transform: none;
+	text-decoration: inherit;
+	font-style: normal;
+	font-variant: normal;
+	speak: none;
 }
 
 .icon-facebook::before { content: "\66"; } /* "f" */
@@ -125,15 +123,15 @@ h1 {
 	color: rgba(0,0,0,0.3);
 }
 
-.active a {
+.main-navigation .active {
 	color: #766357;
 }
 
-.active a:hover {
+.main-navigation .active:hover {
 	color: #604e43;
 }
 
-.active a:active {
+.main-navigation .active:active {
 	color: rgba(118,99,87,0.3);
 }
 
@@ -303,7 +301,6 @@ h1 {
 	font-family: "PT Sans bold";
 	font-weight: normal;
 	text-transform: uppercase;
-	
 }
 
 .interest p {
@@ -328,7 +325,6 @@ h1 {
 	font-weight: normal;
 	color: #ffffff;
 	background: #766357;
-	
 }
 
 /*карта*/
@@ -388,7 +384,7 @@ h1 {
 	background: #ebebeb;
 }
 
-.map .check-field:active {
+.map .check-field:focus {
 	background: #ffffff;
 	outline: 2px solid #e5e5e5;
 }
@@ -499,16 +495,17 @@ h1 {
 	background: rgba(254, 254, 254, 0.9);
 	min-height: 120px;
 	box-sizing: border-box;
+	width: 1200px;
 }
 
 .catalog-footer {
 	padding: 36px 0px;
 	text-align: center;
 	font-size: 0px;
-	margin: 0;
-	background: #fefefe;
 	min-height: 120px;
 	box-sizing: border-box;
+	background: #fefefe;
+	width: 1200px;
 }
 
 .footer-unit {
@@ -634,7 +631,6 @@ input[type="checkbox"] + label {
 	padding-left: 40px;
 	margin-bottom: 24px;
 	position: relative;
-	
 }
 
 input[type="checkbox"] + label:before {
@@ -881,10 +877,12 @@ input[type="checkbox"] + label:disabled {
 	padding-bottom: 2px;
 }
 
+
+
 .sorting a {
 	color: rgba(0,0,0, 0.3);
 	text-decoration: none;
-	border-bottom: 1px dotted ;
+	border-bottom: 1px dotted #81b3d2;
 }
 
 .sorting a:hover {
@@ -903,6 +901,7 @@ input[type="checkbox"] + label:disabled {
 	position: relative;
 	width: 110px;
 	text-align: right;
+	
 }
 
 .moving i {
@@ -925,6 +924,12 @@ input[type="checkbox"] + label:disabled {
 .moving .icon-up-dir {
 	right: 10px;
 }
+
+.find-item li .active{
+	border-bottom: none;
+	color: #81b3d2;
+}
+
 
 /*отели*/
 
@@ -1013,7 +1018,8 @@ input[type="checkbox"] + label:disabled {
 	background: #81b3d2;
 	text-decoration: none;
 	color: #ffffff;
-	font-weight: bold;
+	font-family: "PT Sans bold";
+	font-weight: normal;
 	padding: 3px 0 3px;
 }
 
