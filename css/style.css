@@ -577,7 +577,7 @@ h1 {
 	display: inline-block;
 	vertical-align: bottom;
 	background: url(../img/academy-sprite.png);
-	width: 113px;
+	width: 115px;
 	height: 42px;
 }
 
@@ -652,7 +652,7 @@ input[type="checkbox"] + label:last-child {
 	margin-bottom: 0px;
 }
 
-input[type="checkbox"] + label:disabled {
+input[type="checkbox"]:disabled + label {
 	color: #6a6a6a;
 }
 
@@ -925,7 +925,12 @@ input[type="checkbox"] + label:disabled {
 	right: 10px;
 }
 
-.find-item li .active{
+.find-item .active{
+	border-bottom: none;
+	color: #81b3d2;
+}
+
+.find-item .active:hover{
 	border-bottom: none;
 	color: #81b3d2;
 }
