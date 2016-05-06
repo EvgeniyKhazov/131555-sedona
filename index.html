@@ -166,7 +166,17 @@
 					<a href="https://htmlacademy.ru/"></a>
 				</div>
 			</footer>
+			<script>
 			
+				var link = document.querySelector(".interest a");
+				var form = document.querySelector(".map form");
+				link.addEventListener("click", function(event){
+				event.preventDefault();
+				form.classList.add("show");
+				});
+				
+			
+			</script>
 		</div>
 	</body>
 </html>
