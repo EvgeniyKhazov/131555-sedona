@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>Sedona</title>
 		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style.min.css">
 	</head>
 	
 	<body>
@@ -125,7 +125,7 @@
 				<h3>Заинтересовались?</h3>
 				<p>Укажите предполагаемые даты поездки,<br>
 				и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-				<a href="form.html">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+				<a href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
 			</section>
 					
 			<!--карта-->
@@ -166,16 +166,7 @@
 					<a href="https://htmlacademy.ru/"></a>
 				</div>
 			</footer>
-			<script>
-			
-				var link = document.querySelector(".interest a");
-				var form = document.querySelector(".map form");
-				link.addEventListener("click", function(event){
-				event.preventDefault();
-				form.classList.toggle("show");
-				});
-				
-			</script>
 		</div>
+		<script src="js/scripts.min.js"></script>
 	</body>
 </html>
