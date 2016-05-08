@@ -197,9 +197,9 @@ h1 {
 .reason-item h2 {
 	padding: 0;
 	margin: 0;
+	margin-bottom: 24px;
 	font-size: 21px;
 	line-height: 21px;
-	margin-bottom: 24px;
 	font-family: "PT Sans Bold";
 	font-weight: normal;
 	text-transform: uppercase;
@@ -239,6 +239,7 @@ h1 {
 }
 
 /*Приемущества вторая строка*/
+
 .services {
 	font-size: 0px;
 }
@@ -367,6 +368,19 @@ h1 {
 
 .map .show {
 	display: block;
+	animation-name: visible;
+	animation-duration: 0.6s;
+}
+
+@keyframes visible {
+	
+	from {
+		transform: translateX(-1000px);
+	}
+	
+	to {
+		transform: translateX(0);
+	}
 }
 
 .map input {
@@ -866,7 +880,7 @@ input[type="checkbox"]:disabled + label {
 	
 }
 
-.find-item ul{
+.find-item ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -907,7 +921,6 @@ input[type="checkbox"]:disabled + label {
 	position: relative;
 	width: 110px;
 	text-align: right;
-	
 }
 
 .moving i {
