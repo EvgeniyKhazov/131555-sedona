@@ -194,6 +194,10 @@ h1 {
 	width: 1200px;
 }
 
+.reason-gray{
+	background: #eeeeee;
+}
+
 .reason-item h2 {
 	padding: 0;
 	margin: 0;
@@ -331,7 +335,7 @@ h1 {
 /*карта*/
 
 .map {
-	background: url("../img/map-bg.png");
+	background: #f2f1ef url("../img/map-bg.png");
 	min-height: 593px;
 	box-sizing: border-box;
 	position: relative;
@@ -341,7 +345,7 @@ h1 {
 
 .map iframe {
 	width: 1200px;
-	height: 593px;
+	min-height: 593px;
 	border: 0;
 	padding: 0;
 	margin: 0;
@@ -481,7 +485,8 @@ h1 {
 	margin: 0;
 	margin-top: 25px;
 	width: 458px;
-	height: 58px;
+	height: auto;
+	padding: 16px 0;
 	box-sizing: border-box;
 	text-align: center;
 	background: #81b3d2;
@@ -965,14 +970,14 @@ input[type="checkbox"]:disabled + label {
 
 .housing-item .image {
 	display: inline-block;
-	vertical-align: bottom;
+	vertical-align: top;
 	padding-right: 30px;
 	padding-top: 5px;
 }
 
 .image img {
 	display: inline-block;
-	vertical-align: bottom;
+	vertical-align: top;
 	width: 135px;
 	height: 90px;
 }
@@ -1076,6 +1081,7 @@ input[type="checkbox"]:disabled + label {
 
 .rating .icon-star {
 	display: inline-block;
+	vertical-align: top;
 	font-size: 19px;
 	line-height: 21px;
 	margin-right: -4px;
