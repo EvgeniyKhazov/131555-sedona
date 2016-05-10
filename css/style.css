@@ -385,8 +385,20 @@ img {
 
 .map .show {
 	display: block;
-	animation-name: visible;
-	animation-duration: 0.6s;
+	-webkit-animation: visible 0.6s; 
+	animation: visible 0.6s;
+}
+
+@-webkit-keyframes{
+	from {
+		-webkit-transform: translateX(-1000px);
+		transform: translateX(-1000px);
+	}
+	
+	to {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
 }
 
 @keyframes visible {
