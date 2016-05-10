@@ -40,7 +40,7 @@ img {
 	font-style: normal;
 	font-family: "symbols-sedona";
 	src: url("../fonts/symbols-sedona.woff") format("woff"),
-	   url("../fonts/symbols-sedona.woff2") format("woff2");
+	url("../fonts/symbols-sedona.woff2") format("woff2");
 }
 
 [class^="icon-"]::before,
@@ -754,13 +754,13 @@ input[type="checkbox"]:disabled + label {
 .cost-field input[type="text"] {
 	display: inline-block;
 	vertical-align: top;
-	line-height: 32px;
+	line-height: 21px;
 	box-sizing: border-box;
 	border: none;
 	background: none;
 	color: #ffffff;
 	font-size: 14px;
-	padding: 0;
+	padding: 6px 0 6px;
 	padding-left: 4px;
 }
 
@@ -775,9 +775,10 @@ input[type="checkbox"]:disabled + label {
 .cost-field label {
 	display: inline-block;
 	vertical-align: top;
-	line-height: 32px;
+	line-height: 21px;
 	box-sizing: border-box;
 	font-size: 14px;
+	padding: 6px 0;
 }
 
 .cost-field input:focus {
@@ -1099,5 +1100,3 @@ input[type="checkbox"]:disabled + label {
 	margin-bottom:45px;
 	color: #81b3d2;
 }
-
-
