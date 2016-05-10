@@ -7,11 +7,24 @@ body {
 }
 
 h1 {
-	font-family: "PT Sans Bold";
+	font-family: "PT Sans Bold", Arial, sans-serif;
 	font-weight: normal;
 	font-size: 21px;
 	line-height: 26px;
 	text-transform: uppercase;
+}
+
+img {
+	max-width:100%; 
+	height:auto;
+}
+
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: "PT Sans";
+	src: url("../fonts/ptsans.woff") format("woff"),
+	url("../fonts/ptsans.woff2") format("woff2");
 }
 
 @font-face {
@@ -111,7 +124,7 @@ h1 {
 	color: #000000;
 	font-size: 14px;
 	line-height: 26px;
-	font-family: "PT Sans Bold";
+	font-family: "PT Sans Bold", Arial, sans-serif;
 	font-weight: normal;
 }
 
@@ -177,7 +190,7 @@ h1 {
 	padding: 0;
 	margin: 0;
 	margin-bottom: 30px;
-	font-family: "PT Sans bold";
+	font-family: "PT Sans Bold", Arial, sans-serif;
 	font-weight: normal;
 }
 
@@ -204,7 +217,7 @@ h1 {
 	margin-bottom: 24px;
 	font-size: 21px;
 	line-height: 21px;
-	font-family: "PT Sans Bold";
+	font-family: "PT Sans Bold", Arial, sans-serif;
 	font-weight: normal;
 	text-transform: uppercase;
 }
@@ -276,7 +289,7 @@ h1 {
 	margin-bottom: 25px;
 	font-size: 21px;
 	line-height: 21px;
-	font-family: "PT Sans bold";
+	font-family: "PT Sans Bold", Arial, sans-serif;
 	font-weight: normal;
 	text-transform: uppercase;
 }
@@ -303,7 +316,7 @@ h1 {
 	text-align: center;
 	font-size: 30px;
 	line-height: 24px;
-	font-family: "PT Sans bold";
+	font-family: "PT Sans Bold", Arial, sans-serif;
 	font-weight: normal;
 	text-transform: uppercase;
 }
@@ -326,7 +339,7 @@ h1 {
 	text-decoration: none;
 	font-size: 21px;
 	line-height: 26px;
-	font-family: "PT Sans bold";
+	font-family: "PT Sans Bold", Arial, sans-serif;
 	font-weight: normal;
 	color: #ffffff;
 	background: #766357;
@@ -358,7 +371,7 @@ h1 {
 	box-sizing: border-box;
 	margin: 0 auto;
 	font-size: 0px;
-	font-family: "PT Sans bold";
+	font-family: "PT Sans Bold", Arial, sans-serif;
 	font-weight: normal;
 	line-height: 26px;
 	padding: 55px;
@@ -378,10 +391,12 @@ h1 {
 
 @keyframes visible {
 	from {
+		-webkit-transform: translateX(-1000px);
 		transform: translateX(-1000px);
 	}
 	
 	to {
+		-webkit-transform: translateX(0);
 		transform: translateX(0);
 	}
 }
@@ -543,7 +558,7 @@ h1 {
 	vertical-align: middle;
 	font-size: 21px;
 	line-height: 26px;
-	font-family: "PT Sans bold";
+	font-family: "PT Sans Bold", Arial, sans-serif;
 	font-weight: normal;
 	color: #000000;
 	text-transform: uppercase;
@@ -619,7 +634,7 @@ h1 {
 .facilities {
 	font-size: 0px;
 	color: #ffffff;
-	background: #749cc0 url(../img/catalog-form-bg.png);
+	background: #749cc0 url("../img/catalog-form-bg.jpg");
 	padding: 27px 72px 30px;
 	box-sizing: border-box;
 }
@@ -637,7 +652,7 @@ h1 {
 	padding:0;
 	margin-bottom: 25px;
 	font-size: 16px;
-	font-family: "PT Sans bold";
+	font-family: "PT Sans Bold", Arial, sans-serif;
 	font-weight: normal;	
 }
 
@@ -866,7 +881,7 @@ input[type="checkbox"]:disabled + label {
 	font-size: 21px;
 	line-height: 26px;
 	margin: 0;
-	font-family: "PT Sans bold";
+	font-family: "PT Sans Bold", Arial, sans-serif;
 	font-weight: normal;
 }
 
@@ -881,7 +896,6 @@ input[type="checkbox"]:disabled + label {
 	line-height: 18px;
 	width: 115px;
 	padding-bottom: 2px;
-	
 }
 
 .find-item ul {
@@ -900,8 +914,6 @@ input[type="checkbox"]:disabled + label {
 	padding-bottom: 2px;
 }
 
-
-
 .sorting a {
 	color: rgba(0,0,0, 0.3);
 	text-decoration: none;
@@ -918,7 +930,7 @@ input[type="checkbox"]:disabled + label {
 }
 
 .sorting li {
-	width: 82px;
+	min-width: 82px;
 }
 
 .moving {
@@ -1012,7 +1024,7 @@ input[type="checkbox"]:disabled + label {
 }
 
 .name a {
-	font-family: "PT Sans bold";
+	font-family: "PT Sans Bold", Arial, sans-serif;
 	font-weight: normal;
 	text-decoration: none;
 	color: #000000;
@@ -1046,7 +1058,7 @@ input[type="checkbox"]:disabled + label {
 	background: #81b3d2;
 	text-decoration: none;
 	color: #ffffff;
-	font-family: "PT Sans bold";
+	font-family: "PT Sans Bold", Arial, sans-serif;
 	font-weight: normal;
 	padding: 3px 0 3px;
 }
